@@ -1,0 +1,158 @@
+*{
+    box-sizing: border-box;
+    
+}
+html,body{
+    margin: 0%;
+    height: 100%;
+    background-color:#982B1C;
+    font-family: "Sofadi One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+.container{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    
+}
+.title{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #800000;
+    font-weight: 1000;
+    
+}
+.leftbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #F2E8C6;
+    padding: 0vh 1vh;
+    
+}
+
+.cards{
+    align-self: center;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    row-gap: 100px;
+    column-gap: 20px;
+    padding:1vh ;
+    
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: #DAD4B5;
+    padding: 0vh 4vh 2vh 4vh;
+    border-radius: 1vh;
+    border-left: black solid 4px;
+    height: 37vh;
+    justify-content: space-around;
+
+}
+.cardContent{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    padding: 3vh 0vh;
+    font-size: 1.1rem;
+    background-color: #982B1C;
+    padding: 1.7vh;
+    color: #F2E8C6; ;
+    font-weight: 600;
+    border-left: black solid 4px;
+    
+    
+
+   
+}
+.close{
+    align-self: flex-end;
+    font-size: 2rem; 
+    border: 0;
+    border-radius: 10vh;
+    color: #800000;
+   background-color: #DAD4B5;
+   font-weight: 800;
+}
+.addBook{
+    padding: 1vh 2vh;
+    border: 0;
+    background-color: #982B1C;
+    border-radius: 8px;
+    font-weight: 800;
+    color: #F2E8C6;
+}
+dialog{
+    padding: 4vh;
+    border: 3px solid black;
+    background-color: #800000;
+
+}
+form>div{
+    display: flex;
+    justify-content: space-between;
+    gap: 1vh;
+    color: #F2E8C6;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap:1vh
+    
+}
+.buttons>button{
+    padding: 1vh 2vh;
+    border:0;
+    border-radius: 30px;
+    color: #800000;
+    font-weight: 800;
+    background-color: #F2E8C6;
+}
+::backdrop {
+    background-image: linear-gradient(
+      60deg,
+      #800000,
+      #982B1C
+
+    );
+    opacity: 0.7;
+  }
+  input{
+    background-color: #F2E8C6;
+    border: 0;
+  }
+  .read-status{
+    text-align: center;
+    font-size: 1.7rem;
+    color: #800000;
+    font-weight: 800;
+  }
+  .readButton{
+    display: flex;
+   
+
+    
+    
+  }
+  .readButton>button{
+    flex: auto;
+    border: 0;
+    padding: .3vh 0vh;
+    font-weight: 600;
+    
+  }
+  .completed{
+    background-color: #800000;
+    color: #F2E8C6;
+  }
+  .close-card{
+    opacity: .5;
+  }
+  

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <dialog>
+        <form method="dialog" id="form">
+            <div><label for="bookName">BOOK NAME:</label>
+                <input type="text" id="bookName" value="" required></div>
+            <div>
+                <label for="author">AUTHOR NAME:</label>
+                <input type="text" id="author" value="" required>
+            </div>
+            <div>
+                <label for="pages">NO OF PAGES:</label>
+                <input type="text" id="pages" value="" required>
+            </div>
+            <div>
+                <label for="readStatus">READ STATUS:</label>
+                <input type="checkbox" id="readStatus">
+            </div>
+            <div class="buttons">
+                <button id="close-button" tabindex="-1">CLOSE</button>
+                <button id="add" type="submit" >ADD</button>
+            </div>
+        </form>
+    </dialog>
+    <div class="container">
+        <div  class="leftbar">
+            <div class="title">CHIRU'S LIBRARY</div>
+
+        </div>
+        <div class="cards">
+            
+        </div>
+    </div>
+</body>
+</html>
